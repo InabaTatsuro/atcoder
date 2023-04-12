@@ -70,3 +70,10 @@ std = sorted(ls, key=lambda x: x[1])
 
 bisect.bisect(a,x,lo=0,hi=len(a))
 - lo,hiを与えることで subset を考慮可能
+
+from collections import defaultdict
+a = defaultdict(int)
+- {} でなく defaultdict を使うことで a[1] += 1 できる、0で初期化されている
+
+a = b[:]
+- 浅いコピー
