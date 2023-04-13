@@ -77,3 +77,11 @@ a = defaultdict(int)
 
 a = b[:]
 - 浅いコピー
+
+l = ['aaa', 'bbb', 'ccc']
+s = ''.join(l)
+-> aaabbbccc
+
+i = 12.345
+format(i,"010.5f")
+-> 0012.34500
