@@ -8,21 +8,18 @@ python vs pypy
 ・dpの添字を増やす
 
 
-デバッグ用
+デバッグ
 import sys
 if len(sys.argv) == 2:
     sys.stdin = open(sys.argv[1])
 
-    
+
 import sys
 import io
 
 _INPUT = """\
-7 3
-3 -1 1 -2 2 0 5
-2
-1 6
-2 7
+5 3 4
+oxxox
 """
 sys.stdin = io.StringIO(_INPUT)
 
@@ -75,9 +72,6 @@ from collections import defaultdict
 a = defaultdict(int)
 - {} でなく defaultdict を使うことで a[1] += 1 できる、0で初期化されている
 
-a = b[:]
-- 浅いコピー
-
 l = ['aaa', 'bbb', 'ccc']
 s = ''.join(l)
 -> aaabbbccc
@@ -88,3 +82,6 @@ format(i,"010.5f")
 
 1 * pow(3, MOD - 2, MOD) % MOD
 - 1/3 の MOD 表現
+
+ケイリーの公式
+n 頂点のラベル付き木の総数は n^(n-2)
